@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.globalStat{
+  background-image: linear-gradient(to bottom right, rgb(64, 102, 128), rgb(59, 85, 116));
+  color: rgba(127, 166, 182, 0.726);
+  border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.totalData{
+  background-image: linear-gradient(-90deg,rgb(135, 194, 157), rgb(82, 163, 122), rgb(135, 194, 157));
+  /* border-radius: 50%; */
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.countryList{
+  background-color: rgb(82, 163, 122);
+  color: rgb(212, 207, 197);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.countryOption{
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.countryStat{
+  background-image: linear-gradient(to top left, rgb(82, 163, 122), rgb(135, 194, 157));
+  color: rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CountryTotalData{
+  background-image: linear-gradient(-90deg,rgb(59, 85, 116), rgb(12, 33, 58), rgb(59, 85, 116));
+  color: rgb(212, 207, 197);
 }
