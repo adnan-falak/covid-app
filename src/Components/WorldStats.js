@@ -38,7 +38,7 @@ function WorldStats() {
                 </div>
                 </div>
                 <div className='col-lg-9'>
-                    <Suspense fallback= {<h4>Loading...</h4>}>
+                    <Suspense fallback= {<h5>Loading...</h5>}>
                         <TopFiveCountries />
                     </Suspense>
                 </div>

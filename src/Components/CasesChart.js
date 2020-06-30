@@ -23,7 +23,7 @@ function CasesChart() {
         axios.get(`https://api.covid19api.com/total/dayone/country/${state.Slug}`)
         .then(res => { 
             let days = res.data;
-            let _15Days = days.sort((a, b) => a.Confirmed - b.Confirmed).slice(-15);
+            let _15Days = days.sort((a, b) => a.Confirmed - b.Confirmed).slice(-7);
                 _15Days.forEach((day) => {
                 let getTimeStamp = new Date (Date.parse(day.Date))
                 let getDate = getTimeStamp.toDateString()
@@ -47,7 +47,7 @@ function CasesChart() {
                     data: recoverdCases,
                     backgroundColor: 'transparent',
                     borderWidth: 1,
-                    borderColor: 'Pink'
+                    borderColor: 'darkgreen'
                 }
             ]
     
